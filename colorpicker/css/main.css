@@ -1,0 +1,49 @@
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+#colorblock {
+    width: 100px; 
+    height: 100px; 
+    display: block; 
+    background-color: white; 
+    border: 1px solid black;
+}
+
+#canvas {
+    border: 1px solid black;
+    display: block;
+}
+
+section {
+    margin-bottom: 1em;
+}
+label {
+    display: block;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+.main-columns {
+    display: flex;
+    justify-content: center;
+}
+
+.l-column {
+    padding: 0 2em;
+}
+.r-column {
+    padding: 0 2em;
+}

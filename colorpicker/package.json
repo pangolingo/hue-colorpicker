@@ -1,0 +1,11 @@
+{
+  "name": "colorpicker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "c0lor": "^0.1.0",
+    "cie-rgb-converter": "https://github.com/usolved/cie-rgb-converter.git",
+    "color-space": "^1.15.0"
+  }
+}

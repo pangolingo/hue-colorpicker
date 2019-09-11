@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <main>
+            <h1>CIE xyY Color Picker</h1>
+            <div class="main-columns">
+            <div class="l-column">
+                <section>
+                    <div id="colorblock"></div>
+                </section>
+                <section>
+                    <label>Hex</label>
+                    <input type="color" id="hex_picker" value="#ffffff">
+                    <input size="7" id="hex_value" />
+                </section>
+                <section>
+                    <label>sRGB</label>
+                    <input type="number" min="0" max="255" size="3" id="rgb_r" step="5" value="0" />
+                    <input type="number" min="0" max="255" size="3" id="rgb_g" step="5" value="0" />
+                    <input type="number" min="0" max="255" size="3" id="rgb_b" step="5" value="0" />
+                </section>
+                <section>
+                    <label>xyY</label>
+                    <input size="9" id="xyy_x" type="number" min="0.0" step="0.005" value="0.0" max="1.00000" />
+                    <input size="9" id="xyy_y" type="number" min="0.0" step="0.005" value="0.0" max="1.00000" />
+                    <input size="3" id="xyy_lum" type="number" min="0.0" step="5" value="100" max="100" />
+                </section>
+        </div>
+            <div class="r-column">
+            <canvas width="300" height="300" id="canvas" ></canvas>
+            <em>
+                The crosshair under your cursor shows the xy value you have selected.<br>
+                The other crosshair shows the sRGB value it would be converted to.<br>
+                The black triangle contains the sRGB gamut.<br>
+                The white triangle contains the Phillips Hue LED light strip gamut
+            </em>
+        </div>
+    </div>
+    </main>
+
+        <div style="display:none;">
+            <img src="img/cie-chromacity-diagram.png" id="cie-diagram-image" />
+        </div>
+
+        <!-- <script src="node_modules/cie-rgb-converter/cie_rgb_converter.js"></script> -->
+        <!-- <script src="js/c0lor.min.js"></script> -->
+        <script src="js/color-space.js"></script>
+        <script src="js/app.js"></script>
+        
+
+        <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script> -->
+    </body>
+</html>
